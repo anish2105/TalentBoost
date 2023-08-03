@@ -1,0 +1,8 @@
+langchain
+unstructured
+openai
+tiktoken
+sentence_transformers 
+faiss-cpu 
+pdfplumber
+flask

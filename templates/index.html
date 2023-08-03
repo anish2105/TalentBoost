@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Job Application Portal</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to the CV Analyser Portal</h1>
+        <p>Please select an option:</p>
+        <form action="/" method="post" enctype="multipart/form-data">
+            <label for="cv-upload-input" class="custom-file-upload">
+                Upload CV
+                <input type="file" name="cv" id="cv-upload-input">
+            </label>
+        </form>
+    </div>
+</body>
+</html>
