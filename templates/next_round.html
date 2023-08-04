@@ -1,10 +1,32 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>Next Round Page</title>
+    <link rel="stylesheet" href="/static/style.css">
 </head>
+
 <body>
-    <h1>Congratulations! You have passed the first round.</h1>
-    <!-- Add any content or further actions related to the next round here -->
+    <Div class="container">
+        <h3>Congratulations! You have passed the first round.</h3>
+        <div class="cv_inside">
+            <p><strong>Name:</strong> Lorem, ipsum.</p>
+        </div>
+
+        <form action="/" method="post" enctype="multipart/form-data">
+            <div class="cv_inside">
+                <label for="password"><strong>Password:</strong></label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            
+            <div class="cv_inside">
+                <label for="cv-upload-input"><strong> Upload CV:</strong></label>
+                <input type="file" name="cv" id="cv-upload-input">
+            </div>
+            <button class="submit-button">Submit</button>
+        </form>
+    </Div>
+
 </body>
+
 </html>
