@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Summary</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h3>Your details</h3>
+        <div class="cv_inside">
+            <p><strong>Name:</strong> {{ans_name}}</p>
+        </div>
+        <div class="cv_inside">
+            <p><strong>Email</strong> {{ans_email}}</p>
+        </div>
+        <div class="cv_inside">
+            <p><strong>Summary of the resume:</strong> {{ans_summary}}</p>
+        </div>
+        <div class="cv_inside">
+            <p><strong>Proposed refinements:</strong> {{ans_sug}}</p>
+        </div>
+        <div class="cv_inside">
+            <p>Do you want to go back and improve your CV or proceed ahead?</p>
+            <form action="/" method="post">
+                <div class="button-container">
+                    <form action="/go-back" method="get">
+                        <div class="button-container">
+                            <button class="secondary-button">Go Back</button>
+                        </div>
+                    </form>
+                    <button class="submit-button" id="submitButton">Submit</button>
+                </div>
+
+            </form>
+        </div>
+
+
+        <div class="modal" id="myModal">
+            <div class="modal-content">
+                <span class="close-button" id="closeModal">&times;</span>
+                <p>Thank you for submitting! We will contact you shortly.</p>
+            </div>
+        </div>
+        <script src="/static/script.js"></script>
+
+    </div>
+</body>
+
+</html>

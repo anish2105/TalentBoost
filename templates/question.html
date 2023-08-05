@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questionnaire</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="ques-container">
+        <h1>Questionnaire</h1>
+        <form action="/submit" method="post" class="questionnaire-form">
+            <div class="question">
+                <label for="q1">Question 1: What is your name?</label>
+                <input type="text" id="q1" name="answer1" required>
+            </div>
+
+            <div class="question">
+                <label for="q2">Question 2: What is your favorite color?</label>
+                <input type="text" id="q2" name="answer2" required>
+            </div>
+
+            <div class="question">
+                <label for="q3">Question 3: What is your favorite hobby?</label>
+                <input type="text" id="q3" name="answer3" required>
+            </div>
+
+            <!-- Add more questions and input fields as needed -->
+
+            <div class="submit-container">
+                <button class="submit-button" id="submitButton">Submit</button>
+                <p id="timer">Time remaining: <span id="countdown">30:00</span></p>
+            </div>
+
+        </form>
+        <script src="/static/script.js"></script>
+    </div>
+</body>
+</html>
