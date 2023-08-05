@@ -2,17 +2,30 @@
 <html>
 <head>
     <title>Job Application Portal</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="/static/style.css">
 </head>
 <body>
     <div class="container">
         <h1>Welcome to the CV Analyser Portal</h1>
-        <p>Please select an option:</p>
+        <p>Please select the job title and upload your CV: </p>
+
         <form action="/" method="post" enctype="multipart/form-data">
+            <label for="job-list">Job Title:</label>
+            <select id="job-list" name="job-title" class="job-title-selection">
+                <option value="" disabled selected>Choose job title</option>
+                <option value="AI">AI</option>
+                <option value="Blockchain">Blockchain</option>
+                <option value="DevOps">DevOps</option>
+                <option value="SDE">SDE</option>
+                <option value="Web Dev">Web Dev</option>
+            </select>
+
             <label for="cv-upload-input" class="custom-file-upload">
                 Upload CV
                 <input type="file" name="cv" id="cv-upload-input">
-            </label>
+            </label><br>
+
+            <button class="submit-button" type="submit">Submit</button>
         </form>
     </div>
 </body>
