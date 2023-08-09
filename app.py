@@ -122,9 +122,56 @@ def index():
 
     return render_template('index.html')
 
-@app.route('/next-round')
+@app.route('/next-round', methods=['GET', 'POST'])
 def next_round():
+    if request.method == 'POST':
+        entered_password = request.form.get('password')
+        if entered_password == 'YourPassword123':
+            cv_file = request.files.get('cv')
+
+            if cv_file:
+                db = None
+                llm = None
+                cv_filename = cv_file.filename
+                cv_file.save(os.path.join(app.config['UPLOAD_FOLDER'], cv_filename))
+
+                documents = pdf_loader(os.path.join(app.config['UPLOAD_FOLDER'], cv_filename))
+
+                if db is None:
+                    docs = text_splitter.split_documents(documents)
+                    db = FAISS.from_documents(docs, embeddings)
+
+                if llm is None:
+                    llm = OpenAI(model_name='gpt-3.5-turbo', temperature=0)
+
+                qa = RetrievalQA.from_chain_type(llm=llm,
+                                                 chain_type="stuff",
+                                                 retriever=db.as_retriever(k=2),
+                                                 return_source_documents=True,
+                                                 verbose=True)
+
+                # Generate the list of questions using the OpenAI API
+                query = """
+                can you ask 5 questions for this candidates interview based on this resume , machine learning role and his skills , make the questions such that it can be answered in one line"""
+                result = qa(query)
+                ans = result['result']
+                input_string = ans
+
+                # Split the input string into a list of questions
+                questions_list = input_string.split('\n')
+
+                # Remove the '\n' characters from each question
+                questions_list = [question.strip() for question in questions_list if question.strip()]
+
+                # Pass the questions_list and cv_filename to the template
+                return render_template('question.html', questions_list=questions_list, cv_filename=cv_filename)
+            else:
+                return render_template('next_round.html', error_message='Please upload a resume.')
+        else:
+            return render_template('next_round.html', error_message='Incorrect password. Please try again.')
+
     return render_template('next_round.html')
+
 
 @app.route('/question')
 def question():
@@ -139,4 +186,4 @@ def go_back():
     return redirect(url_for('index'))
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(host='0.0.0.0',port=8080)

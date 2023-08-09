@@ -10,18 +10,27 @@
     <Div class="container">
         <h3>Congratulations! You have passed the first round.</h3>
         
-        <form action="/" method="post" enctype="multipart/form-data">
+        <form action="/next-round" method="post" enctype="multipart/form-data">
             <div class="cv_inside">
                 <label for="password"><strong>Password:</strong></label>
                 <input type="password" id="password" name="password" required>
             </div>
             
             <div class="cv_inside">
-                <label for="cv-upload-input"><strong> Upload CV:</strong></label>
+                <label for="cv-upload-input" class="custom-file-upload">
+                    Upload CV</label>
                 <input type="file" name="cv" id="cv-upload-input">
+                <span id="selected-file-name" class="selected-file-name">{{ cv_filename }}</span>
+                <br>
             </div>
+            
             <button class="submit-button">Submit</button>
         </form>
+        
+
+        {% if error_message %}
+        <p class="error">{{ error_message }}</p>
+        {% endif %}
     </Div>
 
 </body>

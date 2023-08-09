@@ -1,3 +1,23 @@
+// JavaScript to display selected file name
+       
+document.addEventListener("DOMContentLoaded", function () {
+    var fileInput = document.getElementById("cv-upload-input");
+    var selectedFileName = document.getElementById("selected-file-name");
+
+    fileInput.addEventListener("change", function () {
+        selectedFileName.textContent = fileInput.files[0].name;
+        selectedFileName.style.display = "inline-block";
+    });
+});
+
+
+
+
+
+
+
+
+
 document.addEventListener("DOMContentLoaded", function () {
     const modal = document.getElementById("myModal");
     const submitButton = document.getElementById("submitButton");
