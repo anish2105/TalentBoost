@@ -1,20 +1,17 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <title>Job Application Portal</title>
     <link rel="stylesheet" href="/static/style.css">
 </head>
-
 <body>
     <div class="container">
         <h1>Welcome to the CV Analyser Portal</h1>
         <p>Please select the job title and upload your CV: </p>
 
         <form action="/" method="post" enctype="multipart/form-data">
-
             <label for="job-list">Job Title:</label>
-            <select id="job-list" class="job-title-selection">
+            <select id="job-list" name="job-title" class="job-title-selection">
                 <option value="" disabled selected>Choose job title</option>
                 <option value="AI">AI</option>
                 <option value="Blockchain">Blockchain</option>
@@ -23,18 +20,14 @@
                 <option value="Web Dev">Web Dev</option>
             </select>
 
-            <br>
             <label for="cv-upload-input" class="custom-file-upload">
-                Upload CV</label>
-            <input type="file" name="cv" id="cv-upload-input">
-            <span id="selected-file-name" class="selected-file-name"></span>
-            <br>
+                Upload CV
+                <input type="file" name="cv" id="cv-upload-input">
+            </label><br>
 
-            <button class="submit-button">Submit</button>
-
+            <button class="submit-button" type="submit">Submit</button>
         </form>
+        
     </div>
-    <script src="/static/script.js"></script>
 </body>
-
 </html>

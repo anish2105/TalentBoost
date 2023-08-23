@@ -24,11 +24,6 @@ h1 {
     margin-top: 0;
 }
 
-
-
-
-
-
 .custom-file-upload {
     display: inline-block;
     padding: 10px 20px;
@@ -192,26 +187,3 @@ input[type="text"] {
     right: 20px;
     font-size: 18px;
 }
-
-
-
-        /* Additional styles for hiding the default file input and displaying the selected file name */
-        .custom-file-upload {
-            display: inline-block;
-            padding: 6px 12px;
-            cursor: pointer;
-            background-color: #3498db;
-            color: #fff;
-            border: none;
-            border-radius: 4px;
-        }
-        
-        #cv-upload-input {
-            display: none; /* Hide the default file input */
-        }
-        
-        .selected-file-name {
-            display: none; /* Initially hide the selected file name */
-            margin-top: 5px;
-            font-size: 14px;
-        }
