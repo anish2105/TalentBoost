@@ -65,11 +65,11 @@ def send_notselected_email(candidate_email):
     except Exception as e:
         print("Error sending email:", e)
 
-def send_hr_email(our_mail , candidate_email):
+def send_hr_email(our_mail , candidate_email,candidates_name, candidates_summary):
     from_email = "404found3@gmail.com"  # Your email address
     password = "nnrpejvnjwdffdwl"     # Your email password or app password
-    subject = "Candidate has been selected"
-    message = f"{candidate_email} has been selected"
+    subject = f"{candidates_name} has been selected"
+    message = f"Candidate's details\n\nName: {candidates_name}\nEmail: {candidate_email}\nSummary: {candidates_summary}\n\nThe above candidate has been shortlisted for interview. Contact him as soon as possible\n\nThank you,\nTalentBoost"
 
     try:
         yag = yagmail.SMTP(from_email, password)
@@ -134,15 +134,16 @@ def index():
                                              return_source_documents=True,
                                              verbose=True)
 
-            query_name = "candidate's name?"
+            query_name = "name of candidate"
             result_name = qa(query_name)
             ans_name = result_name['result']
 
-            query_email = "candidate's email?"
+            query_email = "email of candidate"
             result_email = qa(query_email)
             ans_email = result_email['result']
+            print(result_name,result_email)
 
-            query_summary = "candidates resume summary , Give a short answer"
+            query_summary = "Summary of candidates Resume, give a short answer"
             result_summary = qa(query_summary)
             ans_summary = result_summary['result']
 
@@ -198,9 +199,18 @@ def next_round():
                 ques = result['result']
                 input_string = ques
                 
-                query_email = "candidate's email?"
+                query_name = "name of candidate"
+                result_name = qa(query_name)
+                ans_name = result_name['result']
+
+                query_email = "email of candidate"
                 result_email = qa(query_email)
                 ans_email = result_email['result']
+                print(result_name,result_email)
+
+                query_summary = "Summary of candidates Resume, give a short answer"
+                result_summary = qa(query_summary)
+                ans_summary = result_summary['result']
                 
                 # Split the input string into a list of lines
                 lines = input_string.split('\n')
@@ -220,6 +230,8 @@ def next_round():
                 print(expected_answer_array)
                 session['expected_answer_array'] = expected_answer_array
                 session['ans_email'] = ans_email
+                session['ans_name'] = ans_name
+                session['ans_summary'] = ans_summary
                 # Pass the question_array and expected_answer_array to the template
                 return render_template('question.html', question_array=question_array, expected_answer_array=expected_answer_array, cv_filename=cv_filename)
             else:
@@ -246,6 +258,8 @@ def submit():
     user_answer_array = []
     expected_answer_array = session.get('expected_answer_array', [])
     ans_email = session.get('ans_email','')
+    ans_name = session.get('ans_name','')
+    ans_summary = session.get('ans_summary','')
     print(ans_email)
     print(expected_answer_array)
     # Loop through the form fields and retrieve user answers
@@ -267,7 +281,7 @@ def submit():
     accuracy = correct_count / len(user_answer_array) * 100
     print(accuracy)
     if accuracy>65:
-        send_selection_email(ans_email)
+        send_selection_email(ans_email,ans_name,ans_summary)
         send_hr_email('404found3@gmail.com',ans_email)
     else:
         send_notselection_email(ans_email)

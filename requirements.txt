@@ -7,3 +7,4 @@ faiss-cpu
 pdfplumber
 flask
 python-Levenshtein 
+yagmail
