@@ -6,3 +6,5 @@ sentence_transformers
 faiss-cpu 
 pdfplumber
 flask
+python-Levenshtein 
+yagmail
