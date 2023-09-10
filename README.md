@@ -42,19 +42,19 @@ Start the server
 
 ## Screenshots of the Flask app for intended questions.
 <div align="center">
-<img src="https://imgur.com/IPc7mvK" alt="Login Portal" width="50%" text-align="center">
+<img src="https://imgur.com/tklOMNc" alt="Login Portal" width="50%" text-align="center">
 
 Login Portal for Organizations to Facilitate Resume Submission and Domain Selection by Candidates
 
-<img src="https://imgur.com/JWG0Mnj" alt="Resume Summary" width="50%" text-align="center">
+<img src="https://imgur.com/5heujXC" alt="Resume Summary" width="50%" text-align="center">
 
 After a user submits their resume, the system automatically scans and generates a summary of the candidate's key details. Candidates are then provided with an opportunity to review and refine their resumes based on this summary.
 
-<img src="https://imgur.com/OjZbfQ8" alt="Form Submition" width="50%" text-align="center">
+<img src="https://imgur.com/VuDAYpi" alt="Form Submition" width="50%" text-align="center">
 
 If the resume is submitted, a pop-up is generated confirming the user's successful submission.
 
-<img src="https://imgur.com/oYaxB6g" alt="Clearing First round" width="50%" text-align="center">
+<img src="https://imgur.com/4evrhyQ" alt="Clearing First round" width="50%" text-align="center">
 
 If the resume meets the specified criteria, an automated email is sent to the candidate, containing login credentials and an invitation to participate in the initial assessment round.
 
