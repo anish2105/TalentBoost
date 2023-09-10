@@ -45,7 +45,7 @@ Start the server
 ![image](https://github.com/anish2105/TalentBoost/assets/88924201/cb378ac6-4eae-4fb7-a47a-f0ab23d973e3)
 
 
-<h3>Login Portal for Organizations to Facilitate Resume Submission and Domain Selection by Candidates </h3> 
+Login Portal for Organizations to Facilitate Resume Submission and Domain Selection by Candidates
 
 
 
@@ -57,9 +57,6 @@ Once the user submits a resume, the brief details about the candidate is scanned
 
 
 
-
-
-
 ![image](https://github.com/anish2105/TalentBoost/assets/88924201/56038b7e-b410-41b4-b7b7-5428c20afef4)
 
 
@@ -67,42 +64,35 @@ After a user submits their resume, the system automatically scans and generates 
 
 
 
-
-
 ![image](https://github.com/anish2105/TalentBoost/assets/88924201/e207e948-ac9c-494d-8441-ff6a10801743)
 
-
-* If the resume is submitted, a pop-up is generated confirming the user's successful submission.
-
-
-
+If the resume is submitted, a pop-up is generated confirming the user's successful submission.
 
 
 
 ![image](https://github.com/anish2105/TalentBoost/assets/88924201/b93fe165-6ecf-46e5-b6a8-68b4989e6a0c)
 
 
-* If the resume meets the specified criteria, an automated email is sent to the candidate, containing login credentials and an invitation to participate in the initial assessment round.
-
-
-
+If the resume meets the specified criteria, an automated email is sent to the candidate, containing login credentials and an invitation to participate in the initial assessment round.
 
 
 
 ![image](https://github.com/anish2105/TalentBoost/assets/88924201/e6a1ea7c-8bc7-44e6-8020-46f4906a5ee8)
 
-* 
-
+A questionnaire is dynamically generated from the user's resume to evaluate the candidate's expertise in projects, skills, and other relevant experiences.
 
 
 
 ![image](https://github.com/anish2105/TalentBoost/assets/88924201/7a1fd61b-4af3-424b-83c3-783dfa8230cd)
 
-*
-
+Depending on the candidate's response, if it doesn't match the expected answer, a lower accuracy score is calculated.
 
 
 
 ![image](https://github.com/anish2105/TalentBoost/assets/88924201/adb72337-3d87-4e53-89e6-591866220a1f)
 
-* 
+If the response matches the expected answer, a higher accuracy score is assigned. 
+Following the completion of this round, an automated email is sent to the candidate with the results.
+
+![image](https://github.com/anish2105/TalentBoost/assets/88924201/06b226c5-eb97-43c0-967a-d96d4a764ef8)
+
