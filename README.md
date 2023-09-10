@@ -1,11 +1,13 @@
 
 # TalentBoost
-
+<p align="center"
 ## Abstract:
 **"TalentBoost"**  is a dynamic web application aimed at simplifying and optimizing the candidate evaluation process during recruitment. Leveraging the power of modern web technologies, this application allows candidates to submit their resumes for evaluation against predefined suitability criteria. Recruiters can  review and assess these submissions, receiving instant feedback on each candidate's qualifications, skills, and experience. The application not only automates the assessment process but also facilitates efficient communication with candidates, notifying them of their evaluation outcomes. Built with a user-friendly interface and incorporating advanced natural language processing techniques, TalentBoost represents a significant advancement in modern talent acquisition, promoting speed, efficiency, and objectivity in candidate selection. With the ability to scale, adapt, and integrate with other recruitment systems, TalentBoost promises to revolutionize the way organizations identify and engage top talent.
+</p>
 
 ## Tools and Technologies:
 **FRONT-END** HTML, CSS, JAVASCRIPT
+
 **BACK-END**  FLASK, PYTHON OPENAI
 
 
@@ -40,7 +42,8 @@ Start the server
 ## Screenshots of the Flask app for intended questions.
 
 ![image](https://github.com/anish2105/TalentBoost/assets/88924201/cb378ac6-4eae-4fb7-a47a-f0ab23d973e3)
-* 
+*  
+
 ![image](https://github.com/anish2105/TalentBoost/assets/88924201/5efe3d57-b505-4638-be6f-f4bcffdd16a4)
 *
 
