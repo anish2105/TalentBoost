@@ -10,7 +10,7 @@ from langchain.llms import OpenAI
 import yagmail
 import Levenshtein
 
-os.environ["OPENAI_API_KEY"] = "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"
+os.environ["OPENAI_API_KEY"] = "your-openai-api-key"
 
 app = Flask(__name__)
 app.secret_key = "1234"
@@ -41,7 +41,7 @@ text_splitter = CharacterTextSplitter(
 
 def send_congratulatory_email(candidate_email):
     from_email = "404found3@gmail.com"  # Your email address
-    password = "nnrpejvnjwdffdwl"     # Your email password or app password
+    password = "your-gmail-api-key"     # Your email password or app password, please generate one with the organization gmail
     subject = "Congratulations on Clearing the Resume Screening Test"
     message = "Dear Candidate,\n\nCongratulations! You have successfully cleared the resume screening test for the position. You are now invited to the first-round interview.\n\nPlease log in to our website using the provided password below:\n\nPassword: YourPassword123\n\nLink: http://ec2-13-127-117-112.ap-south-1.compute.amazonaws.com:8080/next-round\n\nWe look forward to seeing you for the interview.\n\nBest regards,\n404Found"
 
@@ -54,7 +54,7 @@ def send_congratulatory_email(candidate_email):
         
 def send_notselected_email(candidate_email):
     from_email = "404found3@gmail.com"  # Your email address
-    password = "nnrpejvnjwdffdwl"     # Your email password or app password
+    password = "your-gmail-api-key"     # Your email password or app password, please generate one with the organization gmail
     subject = "Thank you for your interest in 404Found"
     message = "Dear Candidate,\n\nThank you for your interest in the position at 404Found. We appreciate you taking the time to complete our resume screening test.\n\nWe have carefully reviewed your application and qualifications, and we regret to inform you that you were not selected for the position at this time.\n\nWe were impressed with your skills and experience, but we ultimately decided to move forward with other candidates who had a more specific match with the requirements of the position.\n\nWe wish you the best of luck in your job search, and we encourage you to apply for any future openings that we may have that are a good fit for your skills and experience.\n\nSincerely,\n404Found"
 
@@ -67,7 +67,7 @@ def send_notselected_email(candidate_email):
 
 def send_hr_email(our_mail , candidate_email,candidates_name, candidates_summary):
     from_email = "404found3@gmail.com"  # Your email address
-    password = "nnrpejvnjwdffdwl"     # Your email password or app password
+    password = "your-gmail-api-key"     # Your email password or app password, please generate one with the organization gmail
     subject = f"{candidates_name} has been selected"
     message = f"Candidate's details\n\nName: {candidates_name}\nEmail: {candidate_email}\nSummary: {candidates_summary}\n\nThe above candidate has been shortlisted for interview. Contact him as soon as possible\n\nThank you,\nTalentBoost"
 
@@ -80,7 +80,7 @@ def send_hr_email(our_mail , candidate_email,candidates_name, candidates_summary
         
 def send_notselection_email(candidate_email):
     from_email = "404found3@gmail.com"  # Your email address
-    password = "nnrpejvnjwdffdwl"     # Your email password or app password
+    password = "your-gmail-api-key"     # Your email password or app password, please generate one with the organization gmail
     subject = " Update Regarding Your Interview"
     message = "We hope this message finds you well. Thank you for your interest. We appreciate the time and effort you invested in the interview process.\n\nAfter careful consideration, we regret to inform you that you have not been selected to move forward to the next stage of the selection process. While your qualifications are impressive, we have chosen to proceed with other candidates who closely match the specific requirements for the role.\n\nWe want to express our gratitude for your interest in joining [Company Name]. Your application and interview were valued, and we encourage you to consider future opportunities with us.\n\nWe wish you the best in your continued job search and professional endeavors. If you have any questions or would like feedback on your interview, please feel free to reach out to us.\n\nThank you again for considering our company. We appreciate your understanding and wish you success in your future endeavors.\n\nBest regards,\n404Found"
 
@@ -93,7 +93,7 @@ def send_notselection_email(candidate_email):
         
 def send_selection_email(candidate_email):
     from_email = "404found3@gmail.com"  # Your email address
-    password = "nnrpejvnjwdffdwl"     # Your email password or app password
+    password = "your-gmail-api-key"     # Your email password or app password, please generate one with the organization gmail
     subject = "Invitation to Final Round Face-to-Face Interview"
     message = "Congratulations! We are pleased to inform you that you have successfully cleared the first-round interview test for the position. Your performance and qualifications have impressed us.\n\nWe would like to proceed to the next stage of the selection process by inviting you to a final round of face-to-face interview. Our team is excited to learn more about you and discuss your potential contributions to our organization.\n\nExpect to hear from our team soon to coordinate the details of the upcoming interview. We are eager to meet you in person and explore the possibility of you joining our team.\n\nThank you for your interest in our company, and once again, congratulations on your achievement.\n\nBest regards,\n404Found"
 
