@@ -53,20 +53,18 @@ Login Portal for Organizations to Facilitate Resume Submission and Domain Select
 ![image](https://github.com/anish2105/TalentBoost/assets/88924201/5efe3d57-b505-4638-be6f-f4bcffdd16a4)
 
 
-Once the user submits a resume, the brief details about the candidate is scanned, a Summary of the resume is generated and gives the candidates a chance to refine the resume
-
+After a user submits their resume, the system automatically scans and generates a summary of the candidate's key details. Candidates are then provided with an opportunity to review and refine their resumes based on this summary.
 
 
 ![image](https://github.com/anish2105/TalentBoost/assets/88924201/56038b7e-b410-41b4-b7b7-5428c20afef4)
 
 
-After a user submits their resume, the system automatically scans and generates a summary of the candidate's key details. Candidates are then provided with an opportunity to review and refine their resumes based on this summary.
+If the resume is submitted, a pop-up is generated confirming the user's successful submission.
 
 
 
 ![image](https://github.com/anish2105/TalentBoost/assets/88924201/e207e948-ac9c-494d-8441-ff6a10801743)
 
-If the resume is submitted, a pop-up is generated confirming the user's successful submission.
 
 
 
