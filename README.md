@@ -32,12 +32,14 @@ Start the server
   python app.py
 ```
 
---
+
 ## Authors
 
 - [@Anish Vantagodi](https://www.github.com/anish2105)
+- [@Ishita Singhal](https://www.github.com/ishita-singhal)
+- [@Pooja Harihar](https://www.github.com/poojaharihar03)
 
---
+
 # Screenshots
 
 ## Screenshots of the Flask app for intended questions.
