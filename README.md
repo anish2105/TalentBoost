@@ -1,18 +1,18 @@
 
 # TalentBoost
 
-## Abstract:
+## 👩‍💻 Abstract:
 **"TalentBoost"**  is a dynamic web application aimed at simplifying and optimizing the candidate evaluation process during recruitment. Leveraging the power of modern web technologies, this application allows candidates to submit their resumes for evaluation against predefined suitability criteria. Recruiters can  review and assess these submissions, receiving instant feedback on each candidate's qualifications, skills, and experience. The application not only automates the assessment process but also facilitates efficient communication with candidates, notifying them of their evaluation outcomes. Built with a user-friendly interface and incorporating advanced natural language processing techniques, TalentBoost represents a significant advancement in modern talent acquisition, promoting speed, efficiency, and objectivity in candidate selection. With the ability to scale, adapt, and integrate with other recruitment systems, TalentBoost promises to revolutionize the way organizations identify and engage top talent.
 
---
+---
 
-## Tools and Technologies:
+## 🛠 Tools and Technologies:
 **FRONT-END** HTML, CSS, JAVASCRIPT
 **BACK-END**  FLASK, PYTHON OPENAI
 
---
+---
 
-## Run Locally
+## ⚡️ Run Locally
 
 Clone the project
 
@@ -31,16 +31,17 @@ Start the server
 ```bash
   python app.py
 ```
+---
 
-
-## Authors
+## 🚀 Authors
 
 - [@Anish Vantagodi](https://www.github.com/anish2105)
 - [@Ishita Singhal](https://www.github.com/ishita-singhal)
 - [@Pooja Harihar](https://www.github.com/poojaharihar03)
 
+---
 
-# Screenshots
+# 🔗 Screenshots
 
 ## Screenshots of the Flask app for intended questions.
 <div align="center">
@@ -74,5 +75,9 @@ If the response matches the expected answer, a higher accuracy score is assigned
 --
 ![image](https://github.com/anish2105/TalentBoost/assets/88924201/40ce74d0-6fa6-43bc-bc0d-23c905483b6d)
 Following the completion of this round, an automated email is sent to the HR or the Manager with the results.
---
+
 </div>
+
+---
+
+
