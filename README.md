@@ -8,7 +8,10 @@
 
 ## 🛠 Tools and Technologies:
 **FRONT-END** HTML, CSS, JAVASCRIPT
-**BACK-END**  FLASK, PYTHON OPENAI
+
+**BACK-END**  FLASK, PYTHON 
+
+**Technologies** OpenAi api, Langchain,  Yagmail
 
 ---
 
