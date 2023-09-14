@@ -49,38 +49,45 @@ Start the server
 ## Screenshots of the Flask app for intended questions.
 <div align="center">
   
-![image](https://github.com/anish2105/TalentBoost/assets/88924201/60dca96a-50f7-4a37-bdaa-442a00011727)
+![image](https://github.com/anish2105/TalentBoost/assets/88924201/c4aac58b-b5fb-4d56-8992-e0cfbc0da6e0)
 
 Login Portal for Organizations to Facilitate Resume Submission and Domain Selection by Candidates
 --
-![image](https://github.com/anish2105/TalentBoost/assets/88924201/491069b1-390e-4023-a83b-6392f0b59255)
+![image](https://github.com/anish2105/TalentBoost/assets/88924201/4459dc38-c166-40eb-ba86-17fd6f810eb2)
+
 After a user submits their resume, the system automatically scans and generates a summary of the candidate's key details. Candidates are then provided with an opportunity to review and refine their resumes based on this summary.
 --
-![image](https://github.com/anish2105/TalentBoost/assets/88924201/1325c8ce-cf51-4b8f-b9bd-2beb72931ffb)
+![image](https://github.com/anish2105/TalentBoost/assets/88924201/812c52d8-1ab0-4685-8e0c-02b48e28f692)
+
 If the resume is submitted, a pop-up is generated confirming the user's successful submission.
 --
-![image](https://github.com/anish2105/TalentBoost/assets/88924201/b7f9fbd2-0578-4569-a7f8-8c9a65955608)
+![image](https://github.com/anish2105/TalentBoost/assets/88924201/0f497323-dba3-4357-adaf-0a20c399b934)
+
 If the resume meets the specified criteria, an automated email is sent to the candidate, containing login credentials and an invitation to participate in the initial assessment round.
 --
-![image](https://github.com/anish2105/TalentBoost/assets/88924201/396a4595-2989-41cb-9223-856c3dfbe158)
+![image](https://github.com/anish2105/TalentBoost/assets/88924201/964d06a1-c1c4-4718-b5de-fefa7205eda1)
+
 The login page directs users to enter their password.
 --
-![image](https://github.com/anish2105/TalentBoost/assets/88924201/43f707f4-658f-40e0-8c12-810b06e6f1ed)
+![image](https://github.com/anish2105/TalentBoost/assets/88924201/3d3fbe6f-ca20-4d5c-8ee8-c3cbd590e572)
+
 A questionnaire is dynamically generated from the user's resume to evaluate the candidate's expertise in projects, skills, and other relevant experiences.
 --
 
-![image](https://github.com/anish2105/TalentBoost/assets/88924201/fcaf2e38-2e41-4b14-8e40-c7c429cff0ac)
+![image](https://github.com/anish2105/TalentBoost/assets/88924201/c5ecb4b5-b07f-4bcf-a5ab-91f0fbd7dbdb)
+
 Depending on the candidate's response, if it doesn't match the expected answer, a lower accuracy score is calculated.
 --
 
-![image](https://github.com/anish2105/TalentBoost/assets/88924201/7d2552e9-14bd-4784-9f93-3158593d065c)
+![image](https://github.com/anish2105/TalentBoost/assets/88924201/674f7bc2-bb42-4944-a91b-024881d0c31e)
+
 If the response matches the expected answer, a higher accuracy score is assigned. 
 --
-![image](https://github.com/anish2105/TalentBoost/assets/88924201/40ce74d0-6fa6-43bc-bc0d-23c905483b6d)
+![image](https://github.com/anish2105/TalentBoost/assets/88924201/2af2256f-5721-4237-a3ac-f4e74f29b47c)
+
 Following the completion of this round, an automated email is sent to the HR or the Manager with the results.
 
 </div>
 
----
 
 
