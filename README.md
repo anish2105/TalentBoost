@@ -7,11 +7,11 @@
 ---
 
 ## 🛠 Tools and Technologies:
-**FRONT-END** HTML, CSS, JAVASCRIPT
+**FRONT-END**:- HTML, CSS, JAVASCRIPT
 
-**BACK-END**  FLASK, PYTHON 
+**BACK-END**:-  FLASK, PYTHON 
 
-**Technologies** OpenAi api, Langchain,  Yagmail
+**Technologies**:- OpenAi api, Langchain,  Yagmail
 
 ---
 
