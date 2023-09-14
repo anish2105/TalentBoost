@@ -87,6 +87,9 @@ If the response matches the expected answer, a higher accuracy score is assigned
 --
 Following the completion of this round, an automated email is sent to the HR or the Manager with the results.
 
+
+![image](https://github.com/anish2105/TalentBoost/assets/88924201/e9799956-e1cd-4693-ae38-96594351ee7e)
+--
 </div>
 
 
