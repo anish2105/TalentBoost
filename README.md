@@ -44,9 +44,9 @@ Start the server
 
 ---
 
-# 🔗 Screenshots
+## 🔗 Screenshots
 
-## Screenshots of the Flask app for intended questions.
+### Screenshots of the Flask app for intended questions.
 <div align="center">
   
 ![image](https://github.com/anish2105/TalentBoost/assets/88924201/c4aac58b-b5fb-4d56-8992-e0cfbc0da6e0)
